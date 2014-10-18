@@ -15,7 +15,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        outputText.text = "Hello Swift!"
+        let apples = 3
+        let oranges = 5
+        let appleSummary = "I have \(apples) apples."
+        let fruitSummary = "I have \(apples + oranges) pieces of fruit."
+
+        outputText.text = ("Output 1: \(appleSummary)  Output 2: \(fruitSummary)")
     }
 
     override func didReceiveMemoryWarning() {
